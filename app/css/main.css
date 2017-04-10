@@ -1,0 +1,59 @@
+body {
+  max-width: 100%;
+  overflow-x: hidden; }
+
+a {
+  text-decoration: none; }
+
+h2 {
+  color: #484848; }
+
+.dark_bg a {
+  color: #fff; }
+
+.dark_bg .title h2 {
+  color: #fff; }
+
+.space-between {
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+ul.refocus {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.header {
+  height: 100vh;
+  overflow-y: hidden;
+  overflow-x: hidden; }
+  .header--top {
+    background-color: #ffcb0f; }
+  .header--bottom {
+    background-color: #222533; }
+  .header--banner {
+    position: relative; }
+    .header--banner .slide--content {
+      position: absolute;
+      color: #f90; }
+  .header .nav .link {
+    color: #000; }
+  .header .nav .search i {
+    color: #ffcb0f; }
+
+.about .preview {
+  background: url(../img/about_block-bg.jpg) 50% 50% no-repeat;
+  background-size: contain;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+  .about .preview img {
+    width: 50%;
+    position: relative; }

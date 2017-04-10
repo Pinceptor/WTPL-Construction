@@ -1,0 +1,28 @@
+{
+  "name": "construction",
+  "description": "Free web template",
+  "main": "gulpfile.js",
+  "authors": [
+    "Pinceptor"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "Template",
+    "PSD"
+  ],
+  "homepage": "https://github.com/Pinceptor/WTPL-Construction",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4.0.0-alpha.6",
+    "jquery": "^3.2.1",
+    "font-awesome": "^4.7.0",
+    "slick-carousel": "^1.6.0"
+  }
+}
