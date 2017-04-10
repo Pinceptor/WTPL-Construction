@@ -1,0 +1,23 @@
+{
+  "name": "construction",
+  "version": "1.0.0",
+  "description": "Free web template",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pinceptor/WTPL-Construstion.git"
+  },
+  "keywords": [
+    "Template",
+    "PSD"
+  ],
+  "author": "Pinceptor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pinceptor/WTPL-Construstion/issues"
+  },
+  "homepage": "https://github.com/Pinceptor/WTPL-Construstion#readme"
+}
