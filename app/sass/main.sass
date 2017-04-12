@@ -1,31 +1,79 @@
+@import '../libs/font-awesome/scss/font-awesome.scss'
 @import 'basic_style'
 .dark_bg
 	a
 		color: #fff
+	.emp
+		color: #ffcb0f
 	.title
 		h2
 			color: #fff
+.emp
+	color: #ffcb0f
 .space-between
 	justify-content: space-between
+.title
+	text-align: center
+	margin-bottom: 30px
+a.button
+	display: inline-block
+	background-color: #ffcb0f
+	text-transform: uppercase
+	color: #fff
+	padding: 0.7rem 1.2rem
+	font-weight: bold
 ul.refocus
 	display: flex
+	li
+		margin-right: 10px
+		margin-left: 10px
+section
+	padding-top: 60px
+	padding-bottom: 60px
+.item
+	padding-top: 15px
+	padding-bottom: 15px
+.round-icon
+		border-radius: 50%
+		border: 5px solid #ffcb0f
+		background-color: #FFF
+		color: #484848
+		font-size: 2rem
+		padding: 2rem
 .header
 	height: 100vh
-	overflow-y: hidden
-	overflow-x: hidden
+	display: flex
+	flex-direction: column
+	.row
+		align-items: center
 	&--top
 		background-color: #ffcb0f
+		i:before, i:after //Отправить свойства в адаптив
+			margin-right: 10px
+			margin-left: 10px
+		.contact :first-child i:before
+			margin-left: 0
+		.social :last-child i:before
+			margin-right: 0
 	&--bottom
 		background-color: #222533
+		.nav
+			display: inline-flex
+		.search
+			margin-left: 10px
 	&--banner
+		flex: 1
 		position: relative
-		.slide
-			//position: relative
-			img.bg
-				//position: relative
-			&--content
-				position: absolute
-				color: #f90
+		overflow: hidden
+		.bg
+			z-index: -1
+			position: absolute
+		&--content
+			text-align: center
+			color: #fff
+	&--top, &--bottom
+		padding-top: 10px
+		padding-bottom: 10px
 	.nav
 		.link
 			color: #000
@@ -33,6 +81,8 @@ ul.refocus
 			i
 				color: #ffcb0f
 .about
+	.row
+		align-items: center
 	.preview
 		background: url(../img/about_block-bg.jpg) 50% 50% no-repeat
 		background-size: contain
@@ -42,3 +92,101 @@ ul.refocus
 		img
 			width: 50%
 			position: relative
+.advantages
+	background-color: #f2f7fa
+	text-align: center
+.services
+	.post
+		padding-right: 30px
+		padding-left: 30px
+.portfolio
+	background: #ffcb0f url(../img/projects/bg.jpg) 50% 50% no-repeat
+	.row
+		justify-content: center
+.testominials
+	background: #fff url(../img/review/bg.jpg) 50% 50% no-repeat
+	&--slider
+		.active
+			.item
+				background-color: #ffcb0f
+				padding: 45px 30px
+		&--content
+			display: flex
+			flex-direction: column
+			.item
+				background-color: #e5e5e5
+				padding: 30px
+				margin-bottom: 30px
+				border-radius: 15px
+			.persona
+				display: flex
+				flex-direction: column
+				align-items: center
+.contact-form
+	background-color: #ffcb0f
+	.title
+		display: flex
+		flex-direction: column
+		justify-content: center
+		margin-bottom: 0
+	input, button
+		flex: 1
+		margin-right: 15px
+	.form
+		.row
+			margin-bottom: 15px
+		& :last-child.row
+			margin-bottom: 0
+		.row :last-child
+			margin-right: 0
+.footer
+	background-color: #1a1c27
+	color: #fff
+	&--content
+		background-image: url("../img/footer-bg.jpg")
+		background-position: 50% 50%
+		background-size: cover
+		img
+			margin-bottom: 15px
+		.social-links .col
+			display: flex
+			justify-content: space-between
+			a
+				background-color: #ffcb0f
+				color: #222
+				padding: 1rem
+				border-radius: 50%
+				font-size: 0.9rem
+				text-align: center
+			i
+				width: 1rem
+				height: 1rem
+	.fast-links
+		li
+			margin-bottom: 5px
+		li:before
+			font-family: FontAwesome
+			content: $fa-var-caret-right
+			margin-right: 15px
+	.post-preview
+		li
+			display: flex
+			align-items: center
+			margin-bottom: 15px
+		span.date
+			border: 2px solid #fff
+			border-radius: 50%
+			padding: 0.6rem
+			text-align: center
+			margin-right: 15px
+			.day, .month
+				width: 2rem
+			.day
+				font-size: 1.3rem
+			.month
+				text-transform: uppercase
+				font-size: 0.6rem
+	&--copyright
+		text-align: center
+		padding-top: 15px
+		padding-bottom: 15px
