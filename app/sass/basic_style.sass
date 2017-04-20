@@ -1,27 +1,55 @@
+@font-face
+	font-family: 'Futura Lt BT Book'
+	font-style: normal
+	font-weight: normal
+	src: local('Futura Lt BT Book'),
+	url('../fonts/futura_lt_book.woff') format('woff'),
+	url('../fonts/futura_lt_book.woff2') format('woff2'),
+	url('../fonts/futura_lt_book.ttf') format('truetype')
+@font-face
+	font-family: 'Futura Lt BT Bold'
+	font-style: normal
+	font-weight: normal
+	src: local('Futura Lt BT Bold'),
+	url('../fonts/futura_lt_bold.woff') format('woff'),
+	url('../fonts/futura_lt_bold.woff2') format('woff2'),
+	url('../fonts/futura_lt_bold.ttf') format('truetype')
 input, button, a.button
+	font-family: 'Futura Lt BT Book', sans-serif
 	border-radius: 8px
-input
 	border: none
+input
 	padding: 0.5rem
+input:focus
+	outline: none
+button
+	cursor: pointer
+	background-color: #484848
+	color: #fff
+	text-transform: uppercase
 img
-	display: flex
 	width: inherit
 body
+	font-family: 'Futura Lt BT Book', sans-serif
 	max-width: 100%
 	overflow-x: hidden
+	font-size: 16px
+	line-height: inherit
 a
 	text-decoration: none
 	color: initial
+h1, h2, h3, h4
+	font-family: 'Futura Lt BT Bold', sans-serif
+	text-transform: uppercase
 h1
 	font-size: 3rem
 	font-weight: 600
-	text-transform: uppercase
 h2
 	font-size: 2rem
 	color: #484848
 h3
-	font-size: 1.5rem
+	font-size: 1.2rem
+	color: #484848
 h4
-	text-transform: uppercase
 	font-weight: bold
 	color: #484848

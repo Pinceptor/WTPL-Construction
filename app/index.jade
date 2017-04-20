@@ -8,6 +8,7 @@ html(lang="ru")
 		link(rel="stylesheet", href="css/reader.css")
 		link(rel="stylesheet", href="css/main.css")
 		link(rel="stylesheet", href="libs/font-awesome/css/font-awesome.min.css")
+		link(rel="stylesheet", href="js/lightbox.min.css")
 		link(rel="stylesheet", href="libs/slick-carousel/slick/slick.css")
 		//[if lt IE 9]
 		script(src="http://html5shiv.googlecode.com/svn/trunk/html5.js")
@@ -19,22 +20,25 @@ html(lang="ru")
 					.row.space-between
 						.contact
 							a(href="tel:1234-5678-9012")
-								i(class='fa fa-mobile') 1234 - 5678 - 9012
+								i(class='fa fa-mobile')
+								span 1234 - 5678 - 9012
 							a(href="mailto:support@Construct.com")
-								i(class='fa fa-envelope') support@Construct.com
-							i(class='fa fa-clock-o') Man - Sat 9:00 - 19:00
+								i(class='fa fa-envelope')
+								span support@Construct.com
+							i(class='fa fa-clock-o')
+							span Man - Sat 9:00 - 19:00
 						.social
-							a(href="https://facebook.com", target="blank")
+							a(href="//facebook.com", target="blank")
 								i(class='fa fa-facebook')
-							a(href="https://twitter.com", target="blank")
+							a(href="//twitter.com", target="blank")
 								i(class='fa fa-twitter')
-							a(href="https://behance.net", target="blank")
+							a(href="//behance.net", target="blank")
 								i(class='fa fa-behance')
-							a(href="https://dribbble.com", target="blank")
+							a(href="//dribbble.com", target="blank")
 								i(class='fa fa-dribbble')
-							a(href="https://linkedin.com", target="blank")
+							a(href="//linkedin.com", target="blank")
 								i(class='fa fa-linkedin')
-							a(href="https://youtube.com", target="blank")
+							a(href="//youtube.com", target="blank")
 								i(class='fa fa-youtube')
 			section.header--bottom.dark_bg.row
 				.container
@@ -63,21 +67,26 @@ html(lang="ru")
 				img(src="img/main_banner-bg.jpg", alt="bg", class="bg row")
 				.header--banner--content.container
 					.item
-						h3 We are Certified Engineers
-						h1 Construction Service
-							.emp Creative & Professional
+						b We are Certified Engineers
+						.title
+							h1 Construction Service
+								.emp Creative & Professional
+						.col-9.column
+							p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
 					.links
 						a(href="#", class="button") Know more
-						a(href="#", class="button") Know more
+						a(href="#", class="button") View project
 		.about.container
 			.row
-				.col-8
+				.content.col-7
 					h2.emp Welcome to our company
 					h3 Aliquam lacus purus, auctor malesuada
-					p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-					p sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+					.item
+						p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+						br
+						p sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
 					a(href="#", class="button") Know more
-				.col-4.preview
+				.col-5.preview.hidden-sm-down
 					img(src="img/about_block-img.png", alt="")
 		section.advantages.container-fluid
 			.container
@@ -86,24 +95,28 @@ html(lang="ru")
 					p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
 				.row
 					.col-md-3.col-sm-6.col
-						i(class="fa fa-envira round-icon")
+						.round-icon
+							i(class="fa fa-envira")
 						.item
 							h4 We deliver quality
 							p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
 					.col-md-3.col-sm-6.col
-						i(class="fa fa-futbol-o round-icon")
+						.round-icon
+							i(class="fa fa-futbol-o")
 						.item
-							h4 We deliver quality
+							h4 Always on time
 							p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
 					.col-md-3.col-sm-6.col
-						i(class="fa fa-users round-icon")
+						.round-icon
+							i(class="fa fa-users")
 						.item
-							h4 We deliver quality
+							h4 We are pasionate
 							p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
 					.col-md-3.col-sm-6.col
-						i(class="fa fa-line-chart round-icon")
+						.round-icon
+							i(class="fa fa-line-chart")
 						.item
-							h4 We deliver quality
+							h4 Professional services
 							p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
 		section.services.container
 			.title
@@ -112,7 +125,7 @@ html(lang="ru")
 				.post.col-md-4
 					img(src="img/services/post1.jpg", alt="Title")
 					.item
-						h3 Construction managment
+						h3 Construction managment 
 						p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
 					a(href="#", class="button") Know more
 				.post.col-md-4
@@ -140,7 +153,14 @@ html(lang="ru")
 						a(href="#") Isolation
 						a(href="#") Plumbing
 				.row
-					span Images Mansory
+					.portfolio--masonry
+						.portfolio--masonry--item-left
+							img(src="img/projects/img1.jpg", alt="")
+						.portfolio--masonry--item-right
+							img(src="img/projects/img2.jpg", alt="")
+							img(src="img/projects/img3.jpg", alt="")
+							img(src="img/projects/img4.jpg", alt="")
+							img(src="img/projects/img5.jpg", alt="")
 		section.testominials.container-fluid
 			.container
 				.title
@@ -153,7 +173,7 @@ html(lang="ru")
 						.persona
 							img(src="img/review/person1.jpg", alt="Name mixin")
 							h4 John Smith
-					.testominials--slider--content.col-md-4.active
+					.testominials--slider--content.col-md-4
 						.item
 							p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
 						.persona
@@ -165,52 +185,77 @@ html(lang="ru")
 						.persona
 							img(src="img/review/person1.jpg", alt="Name mixin")
 							h4 John Smith
+					.testominials--slider--content.col-md-4
+						.item
+							p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+						.persona
+							img(src="img/review/person2.jpg", alt="Name mixin")
+							h4 John Smith
+					.testominials--slider--content.col-md-4
+						.item
+							p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+						.persona
+							img(src="img/review/person1.jpg", alt="Name mixin")
+							h4 John Smith
+					.testominials--slider--content.col-md-4
+						.item
+							p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+						.persona
+							img(src="img/review/person2.jpg", alt="Name mixin")
+							h4 John Smith
 		section.contact-form.container-fluid
 			.container
 				.row.space-between
-					.title.com-md-6.col-xs-12
+					.title.col-md-7.col-xs-12
 						h3 Do you have any questions?
 						span Feel free to contact us!
-					.form.com-md-6.col-xs-12
+					.form.col-md-5.col-xs-12
 						form(action="#")
 							.row
-								input(type="text", value="name")
-								input(type="mail", value="email")
+								input(type="text", name="name", placeholder="Name")
+								input(type="mail", name="email", placeholder="Email")
 							.row
-								input(type="text", value="message")
+								input(type="text", name="message", placeholder="Message")
 								button Submit
 		.footer.container-fluid.dark_bg
 			section.footer--content.row
 				.container
 					.row
 						.about-company.col-md-3
-							h3 Abou Company
+							h3 About Company
 							.item
 								img(src="img/logo.png", alt="Mixin")
 								p Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
 							.social-links.row
 								.col
-									a(href="https://facebook.com", target="blank")
+									a(href="//facebook.com", target="blank")
 										i(class="fa fa-facebook")
-									a(href="https://twitter.com", target="blank")
+									a(href="//twitter.com", target="blank")
 										i(class="fa fa-twitter")
-									a(href="https://youtube.com", target="blank")
+									a(href="//youtube.com", target="blank")
 										i(class="fa fa-youtube")
-									a(href="https://plus.google.com", target="blank")
+									a(href="//plus.google.com", target="blank")
 										i(class="fa fa-google-plus")
-									a(href="https://linkedin.com", target="blank")
+									a(href="//linkedin.com", target="blank")
 										i(class="fa fa-linkedin")
 						.explor-link.col-md-3
 							h3 Explor Link
 							.item
 								ul.fast-links
-									li Our services
-									li Meet our team
-									li Forum
-									li Help center
-									li Privacy Policy
-									li Cekas terms
-									li Site map
+									a(href="#")
+										li Our services
+									a(href="#")
+										li Meet our team
+									a(href="#")
+										li Forum
+									a(href="#")
+										li Help center
+									a(href="#")
+										li Privacy Policy
+									a(href="#")
+										li Cekas terms
+									a(href="#")
+										li Site map
 						.latest-post.col-md-3
 							h3 Latest post
 							.item
@@ -238,13 +283,16 @@ html(lang="ru")
 						.contact-us.col-md-3
 							h3 Contact us
 							.item
-								ul.custom-links
+								ul
 									li
-										i(class="fa fa-map-marker") 124 New Line, London UK
+										i(class="fa fa-map-marker")
+										div 124 New Line, London UK
 									li
-										i(class="fa fa-envelope") hello@psdfreebies.com
+										i(class="fa fa-envelope")
+										div hello@psdfreebies.com
 									li
 										i(class="fa fa-mobile")
+										div
 											p +44 00 00 1234
 											p +44 00 00 1234
 			section.footer--copyright
@@ -252,5 +300,7 @@ html(lang="ru")
 					span Copyright @ 2016 | Designed By 
 						a(href="#", class="emp") PSDFreebies.com
 		script(src="libs/jquery/dist/jquery.min.js")
+		script(src="js/lightbox.min.js")
 		script(src="libs/slick-carousel/slick/slick.min.js")
+		script(src="js/isotope.pkgd.min.js")
 		script(src="js/main.js")

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/reader.css"/>
     <link rel="stylesheet" href="css/main.css"/>
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="js/lightbox.min.css"/>
     <link rel="stylesheet" href="libs/slick-carousel/slick/slick.css"/>
     <!--[if lt IE 9]-->
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -18,8 +19,8 @@
       <section class="header--top row">
         <div class="container">
           <div class="row space-between">
-            <div class="contact"><a href="tel:1234-5678-9012"><i class="fa fa-mobile">1234 - 5678 - 9012</i></a><a href="mailto:support@Construct.com"><i class="fa fa-envelope">support@Construct.com</i></a><i class="fa fa-clock-o">Man - Sat 9:00 - 19:00</i></div>
-            <div class="social"><a href="https://facebook.com" target="blank"><i class="fa fa-facebook"></i></a><a href="https://twitter.com" target="blank"><i class="fa fa-twitter"></i></a><a href="https://behance.net" target="blank"><i class="fa fa-behance"></i></a><a href="https://dribbble.com" target="blank"><i class="fa fa-dribbble"></i></a><a href="https://linkedin.com" target="blank"><i class="fa fa-linkedin"></i></a><a href="https://youtube.com" target="blank"><i class="fa fa-youtube"></i></a></div>
+            <div class="contact"><a href="tel:1234-5678-9012"><i class="fa fa-mobile"></i><span>1234 - 5678 - 9012</span></a><a href="mailto:support@Construct.com"><i class="fa fa-envelope"></i><span>support@Construct.com</span></a><i class="fa fa-clock-o"></i><span>Man - Sat 9:00 - 19:00</span></div>
+            <div class="social"><a href="//facebook.com" target="blank"><i class="fa fa-facebook"></i></a><a href="//twitter.com" target="blank"><i class="fa fa-twitter"></i></a><a href="//behance.net" target="blank"><i class="fa fa-behance"></i></a><a href="//dribbble.com" target="blank"><i class="fa fa-dribbble"></i></a><a href="//linkedin.com" target="blank"><i class="fa fa-linkedin"></i></a><a href="//youtube.com" target="blank"><i class="fa fa-youtube"></i></a></div>
           </div>
         </div>
       </section>
@@ -44,25 +45,31 @@
       </section>
       <section class="header--banner row"><img class="bg row" src="img/main_banner-bg.jpg" alt="bg"/>
         <div class="header--banner--content container">
-          <div class="item">
-            <h3>We are Certified Engineers</h3>
-            <h1>Construction Service
-              <div class="emp">Creative & Professional</div>
-            </h1>
+          <div class="item"><b>We are Certified Engineers</b>
+            <div class="title">
+              <h1>Construction Service
+                <div class="emp">Creative & Professional</div>
+              </h1>
+            </div>
+            <div class="col-9 column">
+              <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+            </div>
           </div>
-          <div class="links"><a class="button" href="#">Know more</a><a class="button" href="#">Know more</a></div>
+          <div class="links"><a class="button" href="#">Know more</a><a class="button" href="#">View project</a></div>
         </div>
       </section>
     </div>
     <div class="about container">
       <div class="row">
-        <div class="col-8">
+        <div class="content col-7">
           <h2 class="emp">Welcome to our company</h2>
           <h3>Aliquam lacus purus, auctor malesuada</h3>
-          <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
-          <p>sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p><a class="button" href="#">Know more</a>
+          <div class="item">
+            <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p><br/>
+            <p>sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+          </div><a class="button" href="#">Know more</a>
         </div>
-        <div class="col-4 preview"><img src="img/about_block-img.png" alt=""/></div>
+        <div class="col-5 preview hidden-sm-down"><img src="img/about_block-img.png" alt=""/></div>
       </div>
     </div>
     <section class="advantages container-fluid">
@@ -72,27 +79,31 @@
           <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
         </div>
         <div class="row">
-          <div class="col-md-3 col-sm-6 col"><i class="fa fa-envira round-icon"></i>
+          <div class="col-md-3 col-sm-6 col">
+            <div class="round-icon"><i class="fa fa-envira"></i></div>
             <div class="item">
               <h4>We deliver quality</h4>
               <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni</p>
             </div>
           </div>
-          <div class="col-md-3 col-sm-6 col"><i class="fa fa-futbol-o round-icon"></i>
+          <div class="col-md-3 col-sm-6 col">
+            <div class="round-icon"><i class="fa fa-futbol-o"></i></div>
             <div class="item">
-              <h4>We deliver quality</h4>
+              <h4>Always on time</h4>
               <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni</p>
             </div>
           </div>
-          <div class="col-md-3 col-sm-6 col"><i class="fa fa-users round-icon"></i>
+          <div class="col-md-3 col-sm-6 col">
+            <div class="round-icon"><i class="fa fa-users"></i></div>
             <div class="item">
-              <h4>We deliver quality</h4>
+              <h4>We are pasionate</h4>
               <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni</p>
             </div>
           </div>
-          <div class="col-md-3 col-sm-6 col"><i class="fa fa-line-chart round-icon"></i>
+          <div class="col-md-3 col-sm-6 col">
+            <div class="round-icon"><i class="fa fa-line-chart"></i></div>
             <div class="item">
-              <h4>We deliver quality</h4>
+              <h4>Professional services</h4>
               <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni</p>
             </div>
           </div>
@@ -106,7 +117,7 @@
       <div class="row">
         <div class="post col-md-4"><img src="img/services/post1.jpg" alt="Title"/>
           <div class="item">
-            <h3>Construction managment</h3>
+            <h3>Construction managment </h3>
             <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
           </div><a class="button" href="#">Know more</a>
         </div>
@@ -133,7 +144,12 @@
         <div class="row">
           <div class="links"><a class="active" href="#">Show All</a><a href="#">Buildings</a><a href="#">Interior Design</a><a href="#">Isolation</a><a href="#">Plumbing</a></div>
         </div>
-        <div class="row"><span>Images Mansory</span></div>
+        <div class="row">
+          <div class="portfolio--masonry">
+            <div class="portfolio--masonry--item-left"><img src="img/projects/img1.jpg" alt=""/></div>
+            <div class="portfolio--masonry--item-right"><img src="img/projects/img2.jpg" alt=""/><img src="img/projects/img3.jpg" alt=""/><img src="img/projects/img4.jpg" alt=""/><img src="img/projects/img5.jpg" alt=""/></div>
+          </div>
+        </div>
       </div>
     </section>
     <section class="testominials container-fluid">
@@ -151,7 +167,7 @@
               <h4>John Smith</h4>
             </div>
           </div>
-          <div class="testominials--slider--content col-md-4 active">
+          <div class="testominials--slider--content col-md-4">
             <div class="item">
               <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
             </div>
@@ -167,23 +183,47 @@
               <h4>John Smith</h4>
             </div>
           </div>
+          <div class="testominials--slider--content col-md-4">
+            <div class="item">
+              <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+            </div>
+            <div class="persona"><img src="img/review/person2.jpg" alt="Name mixin"/>
+              <h4>John Smith</h4>
+            </div>
+          </div>
+          <div class="testominials--slider--content col-md-4">
+            <div class="item">
+              <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+            </div>
+            <div class="persona"><img src="img/review/person1.jpg" alt="Name mixin"/>
+              <h4>John Smith</h4>
+            </div>
+          </div>
+          <div class="testominials--slider--content col-md-4">
+            <div class="item">
+              <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+            </div>
+            <div class="persona"><img src="img/review/person2.jpg" alt="Name mixin"/>
+              <h4>John Smith</h4>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <section class="contact-form container-fluid">
       <div class="container">
         <div class="row space-between">
-          <div class="title com-md-6 col-xs-12">
+          <div class="title col-md-7 col-xs-12">
             <h3>Do you have any questions?</h3><span>Feel free to contact us!</span>
           </div>
-          <div class="form com-md-6 col-xs-12">
+          <div class="form col-md-5 col-xs-12">
             <form action="#">
               <div class="row">
-                <input type="text" value="name"/>
-                <input type="mail" value="email"/>
+                <input type="text" name="name" placeholder="Name"/>
+                <input type="mail" name="email" placeholder="Email"/>
               </div>
               <div class="row">
-                <input type="text" value="message"/>
+                <input type="text" name="message" placeholder="Message"/>
                 <button>Submit</button>
               </div>
             </form>
@@ -196,26 +236,25 @@
         <div class="container">
           <div class="row">
             <div class="about-company col-md-3">
-              <h3>Abou Company</h3>
+              <h3>About Company</h3>
               <div class="item"><img src="img/logo.png" alt="Mixin"/>
                 <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
               </div>
               <div class="social-links row">
-                <div class="col"><a href="https://facebook.com" target="blank"><i class="fa fa-facebook"></i></a><a href="https://twitter.com" target="blank"><i class="fa fa-twitter"></i></a><a href="https://youtube.com" target="blank"><i class="fa fa-youtube"></i></a><a href="https://plus.google.com" target="blank"><i class="fa fa-google-plus"></i></a><a href="https://linkedin.com" target="blank"><i class="fa fa-linkedin"></i></a></div>
+                <div class="col"><a href="//facebook.com" target="blank"><i class="fa fa-facebook"></i></a><a href="//twitter.com" target="blank"><i class="fa fa-twitter"></i></a><a href="//youtube.com" target="blank"><i class="fa fa-youtube"></i></a><a href="//plus.google.com" target="blank"><i class="fa fa-google-plus"></i></a><a href="//linkedin.com" target="blank"><i class="fa fa-linkedin"></i></a></div>
               </div>
             </div>
             <div class="explor-link col-md-3">
               <h3>Explor Link</h3>
               <div class="item">
-                <ul class="fast-links">
-                  <li>Our services</li>
-                  <li>Meet our team</li>
-                  <li>Forum</li>
-                  <li>Help center</li>
-                  <li>Privacy Policy</li>
-                  <li>Cekas terms</li>
-                  <li>Site map</li>
-                </ul>
+                <ul class="fast-links"><a href="#">
+                    <li>Our services</li></a><a href="#">
+                    <li>Meet our team</li></a><a href="#">
+                    <li>Forum</li></a><a href="#">
+                    <li>Help center</li></a><a href="#">
+                    <li>Privacy Policy</li></a><a href="#">
+                    <li>Cekas terms</li></a><a href="#">
+                    <li>Site map</li></a></ul>
               </div>
             </div>
             <div class="latest-post col-md-3">
@@ -240,12 +279,19 @@
             <div class="contact-us col-md-3">
               <h3>Contact us</h3>
               <div class="item">
-                <ul class="custom-links">
-                  <li><i class="fa fa-map-marker">124 New Line, London UK</i></li>
-                  <li><i class="fa fa-envelope">hello@psdfreebies.com</i></li>
-                  <li><i class="fa fa-mobile">
+                <ul>
+                  <li><i class="fa fa-map-marker"></i>
+                    <div>124 New Line, London UK</div>
+                  </li>
+                  <li><i class="fa fa-envelope"></i>
+                    <div>hello@psdfreebies.com</div>
+                  </li>
+                  <li><i class="fa fa-mobile"></i>
+                    <div>
                       <p>+44 00 00 1234</p>
-                      <p>+44 00 00 1234</p></i></li>
+                      <p>+44 00 00 1234</p>
+                    </div>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -257,7 +303,9 @@
       </section>
     </div>
     <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
     <script src="libs/slick-carousel/slick/slick.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
